@@ -5,3 +5,7 @@ target-version = "py312"
 [tool.ruff.lint]
 # 最初は無難に「よく効く」ルールだけ
 select = ["E", "F", "I"]
+
+[tool.black]
+line-length = 120
+target-version = ["py312"]
