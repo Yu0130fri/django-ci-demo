@@ -23,6 +23,10 @@ jobs:
           python -m pip install -U pip
           pip install -r requirements.txt
 
+      - name: Lint (ruff)
+        run: |
+          python -m ruff check .
+
       - name: Run tests
         run: |
           python -m pytest -q
