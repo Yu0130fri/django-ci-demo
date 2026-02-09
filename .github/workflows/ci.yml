@@ -35,6 +35,6 @@ jobs:
         run: |
           python -m mypy .
 
-      - name: Run tests
+      - name: Run tests (with coverage)
         run: |
-          python -m pytest -q
+          python -m pytest -q --cov=app --cov-report=term-missing --cov-report=markdown-append:${GITHUB_STEP_SUMMARY}
