@@ -10,3 +10,4 @@ ruff
 black
 mypy
 pytest-cov
+gunicorn
